@@ -24,10 +24,17 @@ function result() {
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
+  let text = :insertx:;
+  let result = text.replace (:insertx:, xItem);
+  let text = :inserty:; 
+  let result = text.replace (:inserty:, yItem);
+  let text = :insertz:;
+  let result = text.replace (:insertz:, yItem);
   
   if(customName.value !== '') {
     const name = customName.value;
-
+  } else {
+    return name;
   }
 
   if(document.getElementById("uk").checked) {
