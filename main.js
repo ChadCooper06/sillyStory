@@ -37,12 +37,12 @@ function result() {
   } 
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300/ 2.205) + 'stone';
-    const temperature =  Math.round((94-32) * 5/9) + 'centigrade';
+    const weight = `${Math.round(300/ 2.205)} 'stone'`;
+    const temperature =  `${Math.round((94-32) * 5/9)} 'centigrade'`;
     newStory = newStory (text.replace ('94 Fahrenheit', temperature));
     newStory = newStory (text.replace ('300 pounds', weight));
   }
 
-  story.textContent = "newStory";
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
