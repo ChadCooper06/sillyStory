@@ -33,12 +33,14 @@ function result() {
   
   if(customName.value !== '') {
     const name = customName.value;
+    newStory = newStory (text.replace ('Bob', name));
   } 
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+    const weight = Math.round(300/ 2.205) + 'stone';
+    const temperature =  Math.round((94-32) * 5/9) + 'centigrade';
+    newStory = newStory (text.replace ('94 Fahrenheit', temperature);
+    newStory = newStory (text.replace ('300 pounds', weight);
   }
 
   story.textContent = "newStory";
