@@ -26,12 +26,10 @@ function result() {
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
   
-  let text = :insertx:;
-  let result = text.replace (:insertx:, xItem);
-  let text = :inserty:; 
-  let result = text.replace (:inserty:, yItem);
-  let text = :insertz:;
-  let result = text.replace (:insertz:, yItem);
+  let newStory = newStory (text.replace (':insertx:', xItem));
+  let newStory = newStory (text.replace (':insertx:', xItem));
+  let newStory = newStory (text.replace (':inserty:', yItem));
+  let newStory = newStory (text.replace (':insertz:', zItem));
   
   if(customName.value !== '') {
     const name = customName.value;
